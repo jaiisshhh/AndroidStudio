@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     fun clickHandler(view: View) {
         Log.i("MainActivity-clickHandler", "button Clicked")
         var dailIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("9630928324")) //Intent = Intention
-        startActivity(dailIntent)
+        var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ndtv.com"))
+        startActivity(webIntent)
     }
 }
