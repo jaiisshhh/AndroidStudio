@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickHandler(view: View) {
-        Log.i(tag: "MainActivity", msg: "button Clicked")
+        Log.i("MainActivity-clickHandler", "button Clicked")
     }
 }
