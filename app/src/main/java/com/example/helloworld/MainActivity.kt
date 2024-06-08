@@ -1,9 +1,12 @@
 package com.example.helloworld
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     fun clickHandler(view: View) {
         Log.i("MainActivity-clickHandler", "button Clicked")
+        var dailIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("9630928324")) //Intent = Intention
+        startActivity(dailIntent)
     }
 }
