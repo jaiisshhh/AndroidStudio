@@ -47,6 +47,6 @@ class MainActivity : AppCompatActivity() {
         //var dailIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("9630928324")) //Intent = Intention
         var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ndtv.com"))
         startActivity(webIntent)
-
+        throw NullPointerException("demo crash")
     }
 }
